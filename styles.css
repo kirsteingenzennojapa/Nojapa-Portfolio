@@ -33,7 +33,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--secondary);
 }
 .logo {
   font-size: 1.2rem;
@@ -54,6 +54,7 @@ nav {
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
+  color: var(--text);
 }
 section {
   padding: 4rem 2rem;

@@ -4,23 +4,27 @@
   --accent: #059669;
   --secondary: #4b5563;
 }
+
 [data-theme="dark"] {
   --bg: #0a0a0a;
   --text: #ffffff;
   --accent: #10b981;
   --secondary: #6b7280;
 }
+
 [data-theme="light"] {
   --bg: #ffffff;
   --text: #000000;
   --accent: #059669;
   --secondary: #4b5563;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   background: var(--bg);
@@ -28,6 +32,7 @@ body {
   line-height: 1.6;
   transition: all 0.3s;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -35,47 +40,65 @@ nav {
   padding: 1rem 2rem;
   border-bottom: 1px solid var(--secondary);
 }
+
 .logo {
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--accent);
 }
+
 .nav-links {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
+
 .nav-links a {
   color: var(--text);
   text-decoration: none;
 }
+
 .theme-toggle {
-  background: none;
+  background: var(--accent);
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
-  color: var(--text);
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
+
+.theme-toggle:hover {
+  background: #047857;
+  transform: scale(1.05);
+}
+
 section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .hero {
   text-align: center;
 }
+
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+
 .name {
   color: var(--accent);
 }
+
 .subtitle {
   color: var(--secondary);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 .btn-primary {
   background: var(--accent);
   color: white;
@@ -85,38 +108,45 @@ section {
   display: inline-block;
   margin: 1rem 0.5rem;
 }
+
 .about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
+
 .card {
   background: var(--bg);
   padding: 1.5rem;
   border-radius: 8px;
   border: 1px solid var(--secondary);
 }
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
+
 .contact-info {
   margin-top: 2rem;
 }
+
 .contact-item {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
 }
+
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
+
 h3 {
   color: var(--accent);
   margin-bottom: 1rem;

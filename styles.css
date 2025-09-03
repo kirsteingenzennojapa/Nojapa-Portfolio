@@ -1,4 +1,10 @@
 :root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #059669;
+  --secondary: #4b5563;
+}
+[data-theme="dark"] {
   --bg: #0a0a0a;
   --text: #ffffff;
   --accent: #10b981;
@@ -85,10 +91,10 @@ section {
   margin-top: 2rem;
 }
 .card {
-  background: #1a1a1a;
+  background: var(--bg);
   padding: 1.5rem;
   border-radius: 8px;
-  border: 1px solid #333;
+  border: 1px solid var(--secondary);
 }
 .projects-grid {
   display: grid;
